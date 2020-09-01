@@ -13,7 +13,7 @@ const themeH = require('../../styles/themes/theme-h.scss');
 export class ThemesService {
 
     styleTag: any;
-    defaultTheme: string = 'A';
+    defaultTheme: string = 'C';
 
     constructor() {
         this.createStyle();
@@ -26,7 +26,7 @@ export class ThemesService {
         this.styleTag.type = 'text/css';
         this.styleTag.id = 'appthemes';
         head.appendChild(this.styleTag);
-			
+
     }
 
     setTheme(name) {

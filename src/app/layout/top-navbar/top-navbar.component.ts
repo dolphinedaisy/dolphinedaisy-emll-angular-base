@@ -12,7 +12,7 @@ import { ThemesService } from '../../shared/services/themes/themes.service';
 export class TopNavbarComponent implements OnInit {
 
   currentTheme: any ;
-	
+
   constructor(public config: ConfigService, private _elementRef: ElementRef, private _state: GlobalState, public themes: ThemesService) {
     this._state.subscribe('app.isApp_MobileSidebarLeftOpen', (isApp_MobileSidebarLeftOpen) => {
       this.config.appLayout.isApp_MobileSidebarLeftOpen = isApp_MobileSidebarLeftOpen;
@@ -31,7 +31,7 @@ export class TopNavbarComponent implements OnInit {
 	setTheme() {
 			this.themes.setTheme(this.currentTheme);
 	}
-	
+
   toggleAppMobileLeftMenuSidebar() {
     this.config.appLayout.isApp_MobileSidebarLeftOpen = !this.config.appLayout.isApp_MobileSidebarLeftOpen;
 				this.config.appLayout.isApp_BackdropVisible = !this.config.appLayout.isApp_BackdropVisible;

@@ -1,15 +1,7 @@
 import { Routes, RouterModule } from "@angular/router";
 import { LayoutComponent } from "./layout.component";
 const LAYOUT_ROUTES: Routes = [
-	{
-		path: "authentication/lock",
-		loadChildren: "../pages/authentication/lock/lock.module#LockModule"
-	},
-	{
-		path: "authentication/login",
-		loadChildren: "../pages/authentication/login/login.module#LoginModule"
-	},
-	{
+  {
 		path: "",
 		component: LayoutComponent,
 		children: [
