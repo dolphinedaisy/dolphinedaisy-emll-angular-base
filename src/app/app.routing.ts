@@ -4,11 +4,11 @@ import { Routes, RouterModule } from "@angular/router";
 const routes: Routes = [
 	{
 	  path: "",
-    loadChildren: "../pages/authentication/login/login.module#LoginModule"
+    loadChildren: "./pages/authentication/login/login.module#LoginModule"
 	},
   {
     path: "lock",
-    loadChildren: "../pages/authentication/lock/lock.module#LockModule"
+    loadChildren: "./pages/authentication/lock/lock.module#LockModule"
   },
   {
     path: "layout",
