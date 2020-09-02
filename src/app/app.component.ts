@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
 
 	public ngAfterViewInit(): void {
 		PreloaderService.load().then(values => {
-			this._spinner.hide();
+			this._spinner.hide(100);
 		});
 	}
 }
